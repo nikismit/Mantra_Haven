@@ -28,6 +28,8 @@ public class VoiceRing_Script : MonoBehaviour {
 	float currentPitch = 0.0f;
 	float volume = 0.0f;
 	float currentVolume = 0.0f;
+
+	bool pitchGoesUp = true;
 	
 	//Make a sine wave based on pitch
 	float SineFunction (float x, float t) {
@@ -56,9 +58,19 @@ public class VoiceRing_Script : MonoBehaviour {
 	
 	void Update()
     {
-		
-		
-		currentPitch = SIC.inputData.relativeFrequency;
+
+
+		//currentPitch = SIC.inputData.relativeFrequency;
+		/*
+		if (currentPitch <= -1)
+			pitchGoesUp = true;
+		if (currentPitch >= 1)
+			pitchGoesUp = false;
+		if (pitchGoesUp)
+			currentPitch += 0.01f;
+		if (!pitchGoesUp)
+			currentPitch -= 0.01f;
+			*/
 		currentVolume = SIC.inputData.relativeAmplitude;
 
         pitch = Mathf.Lerp(pitch, currentPitch, Time.deltaTime*2f);
@@ -83,13 +95,14 @@ public class VoiceRing_Script : MonoBehaviour {
 			Vector3 position = this.transform.localPosition;
 			Vector2 offset = new Vector2(0,0);
 
-			offset = new Vector2(Mathf.Sin(i/(float)(particles.Length)*2f*Mathf.PI), Mathf.Cos(i/(float)(particles.Length)*2f*Mathf.PI))*(volume*waveWidth);
+			offset = new Vector2(Mathf.Sin(i/(float)(particles.Length)*2f*Mathf.PI), Mathf.Cos(i/(float)(particles.Length)*2f*Mathf.PI))*(waveWidth);
 
 			position.x += offset.x;
 
 			position.z += offset.y;
 
-			position.y = SineFunction(i, t);
+			//position.y = SineFunction(i, t);
+			position.y = SineFunction(i, t) + currentPitch;
 
 			particles[i].transform.localPosition = position;
 
@@ -116,6 +129,6 @@ public class VoiceRing_Script : MonoBehaviour {
 			particles[i].GetComponentInChildren<MeshRenderer>().material.SetColor("_TintColor", partColor);
 
 		}
-		
-    }
+
+	}
 }
