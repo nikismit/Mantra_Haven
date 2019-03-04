@@ -1,0 +1,280 @@
+fileFormatVersion: 2
+guid: d7e0c8bfc2006b24da52db070afd6f94
+timeCreated: 1536137290
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: .kleermakerszit borst
+    100002: .kleermakerszit openpalm
+    100004: .liggen_borst
+    100006: .liggen_openpalm
+    100008: Cube.001
+    100010: Cube.002
+    100012: Cube.003
+    100014: lig_bovenarmL
+    100016: lig_bovenarmR
+    100018: lig_bovenbeenL
+    100020: lig_bovenbeenR
+    100022: lig_hoofd
+    100024: lig_lichaam
+    100026: lig_onderarmL
+    100028: lig_onderarmR
+    100030: lig_onderarmR.001
+    100032: lig_onderbeenL
+    100034: lig_onderbeenR
+    100036: lig_voetL
+    100038: lig_voetR
+    100040: //RootNode
+    100042: zit_bovenarmL
+    100044: zit_bovenarmR
+    100046: zit_bovenbeenL
+    100048: zit_bovenbeenL.001
+    100050: zit_hoofd
+    100052: zit_lichaam
+    100054: zit_onderarmL
+    100056: zit_onderarmL.001
+    100058: zit_onderarmR
+    100060: zit_onderarmR.001
+    100062: zit_onderbeenL
+    100064: zit_onderbeenL.001
+    100066: zit_onderbeenR
+    100068: zit_onderbeenR.001
+    100070: zit_voetL
+    100072: zit_voetL.001
+    100074: zit_voetR
+    100076: zit_voetR.001
+    400000: .kleermakerszit borst
+    400002: .kleermakerszit openpalm
+    400004: .liggen_borst
+    400006: .liggen_openpalm
+    400008: Cube.001
+    400010: Cube.002
+    400012: Cube.003
+    400014: lig_bovenarmL
+    400016: lig_bovenarmR
+    400018: lig_bovenbeenL
+    400020: lig_bovenbeenR
+    400022: lig_hoofd
+    400024: lig_lichaam
+    400026: lig_onderarmL
+    400028: lig_onderarmR
+    400030: lig_onderarmR.001
+    400032: lig_onderbeenL
+    400034: lig_onderbeenR
+    400036: lig_voetL
+    400038: lig_voetR
+    400040: //RootNode
+    400042: zit_bovenarmL
+    400044: zit_bovenarmR
+    400046: zit_bovenbeenL
+    400048: zit_bovenbeenL.001
+    400050: zit_hoofd
+    400052: zit_lichaam
+    400054: zit_onderarmL
+    400056: zit_onderarmL.001
+    400058: zit_onderarmR
+    400060: zit_onderarmR.001
+    400062: zit_onderbeenL
+    400064: zit_onderbeenL.001
+    400066: zit_onderbeenR
+    400068: zit_onderbeenR.001
+    400070: zit_voetL
+    400072: zit_voetL.001
+    400074: zit_voetR
+    400076: zit_voetR.001
+    2100000: No Name
+    2300000: .kleermakerszit borst
+    2300002: .kleermakerszit openpalm
+    2300004: .liggen_borst
+    2300006: .liggen_openpalm
+    2300008: Cube.001
+    2300010: Cube.002
+    2300012: Cube.003
+    2300014: lig_bovenarmL
+    2300016: lig_bovenarmR
+    2300018: lig_bovenbeenL
+    2300020: lig_bovenbeenR
+    2300022: lig_hoofd
+    2300024: lig_lichaam
+    2300026: lig_onderarmL
+    2300028: lig_onderarmR
+    2300030: lig_onderarmR.001
+    2300032: lig_onderbeenL
+    2300034: lig_onderbeenR
+    2300036: lig_voetL
+    2300038: lig_voetR
+    2300040: zit_bovenarmL
+    2300042: zit_bovenarmR
+    2300044: zit_bovenbeenL
+    2300046: zit_bovenbeenL.001
+    2300048: zit_hoofd
+    2300050: zit_lichaam
+    2300052: zit_onderarmL
+    2300054: zit_onderarmL.001
+    2300056: zit_onderarmR
+    2300058: zit_onderarmR.001
+    2300060: zit_onderbeenL
+    2300062: zit_onderbeenL.001
+    2300064: zit_onderbeenR
+    2300066: zit_onderbeenR.001
+    2300068: zit_voetL
+    2300070: zit_voetL.001
+    2300072: zit_voetR
+    2300074: zit_voetR.001
+    3300000: .kleermakerszit borst
+    3300002: .kleermakerszit openpalm
+    3300004: .liggen_borst
+    3300006: .liggen_openpalm
+    3300008: Cube.001
+    3300010: Cube.002
+    3300012: Cube.003
+    3300014: lig_bovenarmL
+    3300016: lig_bovenarmR
+    3300018: lig_bovenbeenL
+    3300020: lig_bovenbeenR
+    3300022: lig_hoofd
+    3300024: lig_lichaam
+    3300026: lig_onderarmL
+    3300028: lig_onderarmR
+    3300030: lig_onderarmR.001
+    3300032: lig_onderbeenL
+    3300034: lig_onderbeenR
+    3300036: lig_voetL
+    3300038: lig_voetR
+    3300040: zit_bovenarmL
+    3300042: zit_bovenarmR
+    3300044: zit_bovenbeenL
+    3300046: zit_bovenbeenL.001
+    3300048: zit_hoofd
+    3300050: zit_lichaam
+    3300052: zit_onderarmL
+    3300054: zit_onderarmL.001
+    3300056: zit_onderarmR
+    3300058: zit_onderarmR.001
+    3300060: zit_onderbeenL
+    3300062: zit_onderbeenL.001
+    3300064: zit_onderbeenR
+    3300066: zit_onderbeenR.001
+    3300068: zit_voetL
+    3300070: zit_voetL.001
+    3300072: zit_voetR
+    3300074: zit_voetR.001
+    4300000: zit_voetR.001
+    4300002: zit_voetL.001
+    4300004: zit_onderbeenR.001
+    4300006: zit_onderbeenL.001
+    4300008: zit_bovenbeenL.001
+    4300010: Cube.003
+    4300012: Cube.002
+    4300014: Cube.001
+    4300016: zit_onderarmL.001
+    4300018: lig_onderarmR.001
+    4300020: .liggen_borst
+    4300022: .liggen_openpalm
+    4300024: lig_onderarmR
+    4300026: lig_onderarmL
+    4300028: lig_bovenarmL
+    4300030: lig_bovenarmR
+    4300032: lig_voetR
+    4300034: lig_voetL
+    4300036: lig_onderbeenR
+    4300038: lig_bovenbeenR
+    4300040: lig_onderbeenL
+    4300042: lig_hoofd
+    4300044: lig_bovenbeenL
+    4300046: zit_onderarmR.001
+    4300048: lig_lichaam
+    4300050: .kleermakerszit borst
+    4300052: .kleermakerszit openpalm
+    4300054: zit_lichaam
+    4300056: zit_bovenbeenL
+    4300058: zit_hoofd
+    4300060: zit_onderbeenL
+    4300062: zit_onderbeenR
+    4300064: zit_voetL
+    4300066: zit_voetR
+    4300068: zit_bovenarmR
+    4300070: zit_bovenarmL
+    4300072: zit_onderarmL
+    4300074: zit_onderarmR
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
