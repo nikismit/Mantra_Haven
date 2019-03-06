@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a2ecf8da0a1f8c48a96305e22977d31, type: 3}
+  m_Name: VoiceRingData
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 1217783946550962, guid: 52b57dfbbfddf7449b4131343c869e2c,
+    type: 3}
+  amountOfParticles: 500
+  particleMoveSpeed: 4
+  waveAmp: 5
+  waveWidth: 0.5
+  pitchColors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0.75311047, b: 0, a: 1}
+  - {r: 1, g: 0.9957261, b: 0, a: 1}
+  - {r: 0, g: 1, b: 0.015195131, a: 1}
+  - {r: 0, g: 1, b: 0.96275425, a: 1}
+  - {r: 0, g: 0.33720446, b: 1, a: 1}
+  - {r: 0.52435493, g: 0, b: 1, a: 1}

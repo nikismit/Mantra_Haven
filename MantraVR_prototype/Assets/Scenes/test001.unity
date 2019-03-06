@@ -6040,18 +6040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SIC: {fileID: 2114470214}
-  particlePrefab: {fileID: 1217783946550962, guid: 52b57dfbbfddf7449b4131343c869e2c,
-    type: 3}
-  amountOfParticles: 500
-  particleMoveSpeed: 4
-  waveAmp: 5
-  waveWidth: 0.5
-  pitchColors:
-  - {r: 1, g: 0, b: 0.80794716, a: 1}
-  - {r: 1, g: 0, b: 0.06547117, a: 1}
-  - {r: 0, g: 0.060104847, b: 1, a: 1}
-  - {r: 0, g: 1, b: 0.85353756, a: 1}
-  - {r: 0, g: 1, b: 0, a: 1}
+  data: {fileID: 11400000, guid: 926f1696b24ce1f4ea6382e27699538e, type: 2}
 --- !u!1001 &1571361115
 PrefabInstance:
   m_ObjectHideFlags: 0

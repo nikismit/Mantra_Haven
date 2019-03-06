@@ -1,29 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using SoundInput;
 
 //This is to create a ring of particles around an object that responds to sound input
 public class VoiceRing_Script : MonoBehaviour {
 
 	public SoundInputController SIC; //A script pulled from a github that checks sound input and gives out some values related to it.
-	public GameObject particlePrefab;
-	[Range(10, 500)]
-	public int amountOfParticles;
-	public float particleMoveSpeed;
-	[Range(0.1f, 5.0f)]
-	public float waveAmp;
-	[Range(0.01f, 1.0f)]
-	public float waveWidth = 0.5f;
 
+	public VoiceRing_Data data;
 
 	GameObject[] particles;
 	GameObject particle;
-
-	[Header("Colors from low to high")]
-	public Color[] pitchColors;
-
-
 
 	float pitch = 0.0f;
 	float currentPitch = 0.0f;
@@ -33,7 +19,7 @@ public class VoiceRing_Script : MonoBehaviour {
 	//Make a sine wave based on pitch
 	float SineFunction (float x, float t) {
 		float y = Mathf.Sin(Mathf.PI *(pitch*0.25f) * (x + t));
-		y *= waveAmp;
+		y *= data.waveAmp;
 		return y;
 	}
 
@@ -41,13 +27,13 @@ public class VoiceRing_Script : MonoBehaviour {
 	private void Start()
 	{
 		//create a ring of particles around the object.
-		particles = new GameObject[amountOfParticles];
+		particles = new GameObject[data.amountOfParticles];
 
-		if(particlePrefab != null){
+		if(data.particlePrefab != null){
 
 			for (int i = 0; i < particles.Length; i++)
 			{
-				particle = Instantiate(particlePrefab) as GameObject;
+				particle = Instantiate(data.particlePrefab) as GameObject;
 				particle.transform.parent = this.transform;
 				particles[i] = particle;
 			}
@@ -73,11 +59,11 @@ public class VoiceRing_Script : MonoBehaviour {
 		
 		Color partColor = Color.white;
 		//set color of particle based on pitch
-		float scaledTime = currentPitch * (float)(pitchColors.Length - 1);
+		float scaledTime = currentPitch * (float)(data.pitchColors.Length - 1);
 		int oldColorIndex = (int)(scaledTime);
-		Color oldColor = (oldColorIndex <= pitchColors.Length - 1) ? pitchColors[oldColorIndex] : pitchColors[pitchColors.Length - 1];
+		Color oldColor = (oldColorIndex <= data.pitchColors.Length - 1) ? data.pitchColors[oldColorIndex] : data.pitchColors[data.pitchColors.Length - 1];
 		int newColorIndex = (int)(scaledTime + 1f);
-		Color newColor = (newColorIndex <= pitchColors.Length - 1) ? pitchColors[newColorIndex] : pitchColors[pitchColors.Length - 1];
+		Color newColor = (newColorIndex <= data.pitchColors.Length - 1) ? data.pitchColors[newColorIndex] : data.pitchColors[data.pitchColors.Length - 1];
 		float newT = scaledTime - Mathf.Round(scaledTime);
 		partColor = Color.Lerp(oldColor, newColor, newT);
 		
@@ -89,7 +75,7 @@ public class VoiceRing_Script : MonoBehaviour {
 			Vector3 position = this.transform.localPosition;
 			Vector2 offset = new Vector2(0,0);
 
-			offset = new Vector2(Mathf.Sin(i/(float)(particles.Length)*2f*Mathf.PI), Mathf.Cos(i/(float)(particles.Length)*2f*Mathf.PI))*(volume*waveWidth);
+			offset = new Vector2(Mathf.Sin(i/(float)(particles.Length)*2f*Mathf.PI), Mathf.Cos(i/(float)(particles.Length)*2f*Mathf.PI))*(volume* data.waveWidth);
 
 			position.x += offset.x;
 
@@ -103,7 +89,7 @@ public class VoiceRing_Script : MonoBehaviour {
 			ParticleSystem.VelocityOverLifetimeModule veloMain = particles[i].GetComponent<ParticleSystem>().velocityOverLifetime;
 
 			//set velocity of particle based on last position
-			Vector3 velocity = Vector3.Normalize(position - this.transform.localPosition)*particleMoveSpeed;
+			Vector3 velocity = Vector3.Normalize(position - this.transform.localPosition)* data.particleMoveSpeed;
 
 			veloMain.x = velocity.x;
 			veloMain.z = velocity.z;
