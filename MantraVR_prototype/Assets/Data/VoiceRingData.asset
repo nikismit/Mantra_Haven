@@ -15,9 +15,9 @@ MonoBehaviour:
   particlePrefab: {fileID: 1217783946550962, guid: 52b57dfbbfddf7449b4131343c869e2c,
     type: 3}
   amountOfParticles: 500
-  particleMoveSpeed: 4
-  waveAmp: 5
-  waveWidth: 0.5
+  particleMoveSpeed: 3.88
+  waveAmp: 4.83
+  waveWidth: 0.466
   pitchColors:
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.75311047, b: 0, a: 1}

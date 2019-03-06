@@ -5,6 +5,7 @@ using SoundInput;
 public class VoiceRing_Script : MonoBehaviour {
 
 	public SoundInputController SIC; //A script pulled from a github that checks sound input and gives out some values related to it.
+	public GameObject light;
 
 	public VoiceRing_Data data;
 
@@ -66,10 +67,13 @@ public class VoiceRing_Script : MonoBehaviour {
 		Color newColor = (newColorIndex <= data.pitchColors.Length - 1) ? data.pitchColors[newColorIndex] : data.pitchColors[data.pitchColors.Length - 1];
 		float newT = scaledTime - Mathf.Round(scaledTime);
 		partColor = Color.Lerp(oldColor, newColor, newT);
-		
-		
+
+		//body light
+
+		light.transform.position = Vector3.Lerp(light.transform.position, new Vector3(light.transform.position.x, transform.position.y + currentPitch * 3, light.transform.position.z), Time.deltaTime*5f);
+
 		//realtime particles
-        for (int i = 0; i < particles.Length; i++)
+		for (int i = 0; i < particles.Length; i++)
         {
 			//set position for each particle based on volume
 			Vector3 position = this.transform.localPosition;
@@ -82,7 +86,7 @@ public class VoiceRing_Script : MonoBehaviour {
 			position.z += offset.y;
 
 			//position.y = SineFunction(i, t);
-			position.y = SineFunction(i, t);
+			position.y = currentPitch * 3;
 
 			particles[i].transform.localPosition = position;
 
