@@ -20,6 +20,7 @@ public class VoiceRing_Script : MonoBehaviour {
 	GameObject[] particles;
 	GameObject particle;
 
+	[Header("Colors from low to high")]
 	public Color[] pitchColors;
 
 
@@ -28,8 +29,6 @@ public class VoiceRing_Script : MonoBehaviour {
 	float currentPitch = 0.0f;
 	float volume = 0.0f;
 	float currentVolume = 0.0f;
-
-	bool pitchGoesUp = true;
 	
 	//Make a sine wave based on pitch
 	float SineFunction (float x, float t) {
@@ -58,22 +57,11 @@ public class VoiceRing_Script : MonoBehaviour {
 	
 	void Update()
     {
-
-
-		//currentPitch = SIC.inputData.relativeFrequency;
-		/*
-		if (currentPitch <= -1)
-			pitchGoesUp = true;
-		if (currentPitch >= 1)
-			pitchGoesUp = false;
-		if (pitchGoesUp)
-			currentPitch += 0.01f;
-		if (!pitchGoesUp)
-			currentPitch -= 0.01f;
-			*/
+		currentPitch = SIC.inputData.relativeFrequency;
 		currentVolume = SIC.inputData.relativeAmplitude;
 
-        pitch = Mathf.Lerp(pitch, currentPitch, Time.deltaTime*2f);
+        pitch = Mathf.Lerp(pitch, currentPitch/1000, Time.deltaTime*2f);
+
 		if(currentVolume > 0){
 			volume = Mathf.Lerp(volume, currentVolume, Time.deltaTime/2f);
 		} else {
@@ -85,7 +73,13 @@ public class VoiceRing_Script : MonoBehaviour {
 		
 		Color partColor = Color.white;
 		//set color of particle based on pitch
-		partColor = Color.Lerp(pitchColors[0], pitchColors[1], pitch);
+		float scaledTime = currentPitch * (float)(pitchColors.Length - 1);
+		int oldColorIndex = (int)(scaledTime);
+		Color oldColor = (oldColorIndex <= pitchColors.Length - 1) ? pitchColors[oldColorIndex] : pitchColors[pitchColors.Length - 1];
+		int newColorIndex = (int)(scaledTime + 1f);
+		Color newColor = (newColorIndex <= pitchColors.Length - 1) ? pitchColors[newColorIndex] : pitchColors[pitchColors.Length - 1];
+		float newT = scaledTime - Mathf.Round(scaledTime);
+		partColor = Color.Lerp(oldColor, newColor, newT);
 		
 		
 		//realtime particles
@@ -95,14 +89,14 @@ public class VoiceRing_Script : MonoBehaviour {
 			Vector3 position = this.transform.localPosition;
 			Vector2 offset = new Vector2(0,0);
 
-			offset = new Vector2(Mathf.Sin(i/(float)(particles.Length)*2f*Mathf.PI), Mathf.Cos(i/(float)(particles.Length)*2f*Mathf.PI))*(waveWidth);
+			offset = new Vector2(Mathf.Sin(i/(float)(particles.Length)*2f*Mathf.PI), Mathf.Cos(i/(float)(particles.Length)*2f*Mathf.PI))*(volume*waveWidth);
 
 			position.x += offset.x;
 
 			position.z += offset.y;
 
 			//position.y = SineFunction(i, t);
-			position.y = SineFunction(i, t) + currentPitch;
+			position.y = SineFunction(i, t);
 
 			particles[i].transform.localPosition = position;
 

@@ -6012,7 +6012,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1512603766
 Transform:
   m_ObjectHideFlags: 0
@@ -6021,7 +6021,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512603765}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalPosition: {x: 0, y: -2.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 114323767}
@@ -6044,10 +6044,13 @@ MonoBehaviour:
     type: 3}
   amountOfParticles: 500
   particleMoveSpeed: 4
-  waveAmp: 1
+  waveAmp: 5
   waveWidth: 0.5
   pitchColors:
-  - {r: 1, g: 0, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0.80794716, a: 1}
+  - {r: 1, g: 0, b: 0.06547117, a: 1}
+  - {r: 0, g: 0.060104847, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0.85353756, a: 1}
   - {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &1571361115
 PrefabInstance:
@@ -7859,7 +7862,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 0}
-        key1: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 0.39215687}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
