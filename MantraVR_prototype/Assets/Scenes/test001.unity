@@ -435,6 +435,11 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.a
       value: 0.009
       objectReference: {fileID: 0}
+    - target: {fileID: 20317808902507550, guid: 14be4032e3925cf46a20a5c3dc6276d6,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 82251152634457902, guid: 14be4032e3925cf46a20a5c3dc6276d6,
         type: 3}
       propertyPath: spreadCustomCurve.m_RotationOrder
@@ -6216,6 +6221,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e8e8c1cc0a083c47990bff4c0b62b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Name: 
   m_EditorClassIdentifier: 
   m_Name: 
