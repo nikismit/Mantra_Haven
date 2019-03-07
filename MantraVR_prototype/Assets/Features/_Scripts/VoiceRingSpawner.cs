@@ -77,6 +77,17 @@ public class VoiceRingSpawner : MonoBehaviour
 
 		voiceRing.GetComponent<VoiceRing>().Setup(_data, SIC);
 
+		Color partColor = Color.white;
+		//set color of particle based on pitch
+		float scaledTime = _currentPitch * (float)(_data.pitchColors.Length - 1);
+		int oldColorIndex = (int)(scaledTime);
+		Color oldColor = (oldColorIndex <= _data.pitchColors.Length - 1) ? _data.pitchColors[oldColorIndex] : _data.pitchColors[_data.pitchColors.Length - 1];
+		int newColorIndex = (int)(scaledTime + 1f);
+		Color newColor = (newColorIndex <= _data.pitchColors.Length - 1) ? _data.pitchColors[newColorIndex] : _data.pitchColors[_data.pitchColors.Length - 1];
+		float newT = scaledTime - Mathf.Round(scaledTime);
+		partColor = Color.Lerp(oldColor, newColor, newT);
+		voiceRing.GetComponent<MeshRenderer>().material.color = partColor;
+
 		// Change mesh
 		Mesh mesh = voiceRing.GetComponent<MeshFilter>().mesh;
 		Vector3[] vertices = mesh.vertices;
