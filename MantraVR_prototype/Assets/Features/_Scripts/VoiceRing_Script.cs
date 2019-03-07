@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using SoundInput;
-
+/*
 //This is to create a ring of particles around an object that responds to sound input
 public class VoiceRing_Script : MonoBehaviour {
 
 	public SoundInputController SIC; //A script pulled from a github that checks sound input and gives out some values related to it.
 	public GameObject light;
 
-	public VoiceRing_Data data;
+	public VoiceRingData data;
 
 	GameObject[] particles;
 	GameObject particle;
@@ -115,4 +115,4 @@ public class VoiceRing_Script : MonoBehaviour {
 		}
 
 	}
-}
+}*/
