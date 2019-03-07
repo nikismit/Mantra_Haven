@@ -12,6 +12,8 @@ public class VoiceRingData : ScriptableObject
 	public GameObject prefab;
 	[Range(0f, 200f)]
 	public float speed = 50f;
+	[Range(0f, 5f)]
+	public float maxHeight = 1.7f;
 
 	[Header("Volume")]
 	[Range(0.1f, 10f)]

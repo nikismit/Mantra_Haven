@@ -55,7 +55,7 @@ public class VoiceRingSpawner : MonoBehaviour
 		_pitch = SIC.inputData.relativeFrequency;
 		_volume = SIC.inputData.relativeAmplitude;
 
-		_currentPitch = LerpPitch(_data.pitchOffsetFactor, 1);
+		_currentPitch = Mathf.Clamp(LerpPitch(_data.pitchOffsetFactor, 1), 0f, _data.maxHeight);
 		_currentVolume = (_volume > 0) ? LerpVolume(_data.volumeOffsetFactor, 1) : 0.0f;
 
 		transform.position = new Vector3(transform.position.x, _startPosition.y + _currentPitch, transform.position.z);
