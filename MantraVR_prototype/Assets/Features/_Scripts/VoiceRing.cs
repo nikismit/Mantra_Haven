@@ -1,4 +1,5 @@
 ﻿using SoundInput;
+using System.Collections;
 using UnityEngine;
 
 public class VoiceRing : MonoBehaviour
@@ -8,10 +9,24 @@ public class VoiceRing : MonoBehaviour
 
 	private VoiceRingData _data;
 
+	private MeshRenderer _meshRenderer;
+
 	private float _pitch = 0.0f;
 	private float _currentPitch = 0.0f;
 	private float _volume = 0.0f;
 	private float _currentVolume = 0.0f;
+
+	private bool _isFading = false;
+
+	private void Awake()
+	{
+		_meshRenderer = GetComponent<MeshRenderer>();
+	}
+
+	private void Start()
+	{
+		StartCoroutine(WaitForFade(_data.fadeAfterSeconds));
+	}
 
 	public void Setup(VoiceRingData voiceRingData, SoundInputController soundInputController)
 	{
@@ -32,6 +47,29 @@ public class VoiceRing : MonoBehaviour
 			transform.localScale.y + _currentVolume + _data.speed * Time.deltaTime,
 			transform.localScale.z
 		);
+
+		// Fading
+		if (_isFading)
+		{
+			Color newColor = _meshRenderer.material.color;
+			float startAlpha = newColor.a;
+
+			newColor.a = Mathf.Lerp(startAlpha, 0f, Time.deltaTime * _data.fadeSpeed);
+
+			if (newColor.a <= 0.01)
+				newColor.a = 0;
+
+			_meshRenderer.material.color = newColor;
+
+			if (newColor.a <= 0)
+				Destroy(gameObject);
+		}
+	}
+
+	private IEnumerator WaitForFade(float seconds)
+	{
+		yield return new WaitForSeconds(seconds);
+		_isFading = true;
 	}
 
 	#region VoiceRing Lerp

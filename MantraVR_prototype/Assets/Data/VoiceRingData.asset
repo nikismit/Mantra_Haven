@@ -13,13 +13,23 @@ MonoBehaviour:
   m_Name: VoiceRingData
   m_EditorClassIdentifier: 
   prefab: {fileID: 471123483903075344, guid: 901759c196bd04a4f908daea621e08b7, type: 3}
-  speed: 15
+  speed: 40
+  maxHeight: 1.7
+  alpha: 0.5
+  fadeAfterSeconds: 15
+  fadeSpeed: 4
+  noiseHeight: 0.2
+  noiseRandomizer: 2
+  noiseSmoothness: 4
+  noiseWidth: 0.00001
+  noiseWidthExponent: 3
+  verticesRandomizer: 0
   volumeSpeed: 1
-  volumeOffsetFactor: 1
+  volumeOffsetFactor: 0.5
   minimumVolume: 0.1
-  pitchSpeed: 1
-  pitchOffsetFactor: 10
-  secondsBetweenSpawning: 0.1
+  pitchSpeed: 2
+  pitchOffsetFactor: 2
+  secondsBetweenSpawning: 0.01
   pitchColors:
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0.7052167, b: 0, a: 1}
@@ -28,3 +38,4 @@ MonoBehaviour:
   - {r: 0, g: 1, b: 0.9424863, a: 1}
   - {r: 0, g: 0.03532791, b: 1, a: 1}
   - {r: 0.5750022, g: 0, b: 1, a: 1}
+  lightColorSpeed: 1
