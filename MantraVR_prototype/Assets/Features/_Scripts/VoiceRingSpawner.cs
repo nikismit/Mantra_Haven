@@ -84,7 +84,7 @@ public class VoiceRingSpawner : MonoBehaviour
 
 		Color partColor = Color.white;
 		//set color of particle based on pitch
-		float scaledTime = _currentPitch * (float)(_data.pitchColors.Length - 1);
+		float scaledTime = _currentPitch * 1.2f * (float)(_data.pitchColors.Length - 1);
 		int oldColorIndex = (int)(scaledTime);
 		Color oldColor = (oldColorIndex <= _data.pitchColors.Length - 1) ? _data.pitchColors[oldColorIndex] : _data.pitchColors[_data.pitchColors.Length - 1];
 		int newColorIndex = (int)(scaledTime + 1f);

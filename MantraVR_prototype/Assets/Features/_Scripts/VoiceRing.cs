@@ -45,7 +45,7 @@ public class VoiceRing : MonoBehaviour
 		transform.localScale = new Vector3(
 			transform.localScale.x + _currentVolume + _data.speed * Time.deltaTime,
 			transform.localScale.y + _currentVolume + _data.speed * Time.deltaTime,
-			transform.localScale.z
+			transform.localScale.z + _currentVolume + _data.speed * Time.deltaTime
 		);
 
 		// Fading

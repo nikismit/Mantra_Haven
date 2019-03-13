@@ -20,12 +20,13 @@ public class GOSoundSet : MonoBehaviour {
 		
 		Vector2 touchposition = OVRInput.Get(OVRInput.Axis2D.PrimaryTouchpad);
 
-		print(SIC.settings.minVolume);
 		if(touchposition.y > 0 && OVRInput.GetDown(OVRInput.Button.One)){
-			SIC.settings.minVolume += 5.0f;
+			SIC.settings.minVolume += 1.0f;
+			SIC.settings.minVolume = Mathf.Clamp(SIC.settings.minVolume, -60, 0);
 		}
 		if(touchposition.y < 0 && OVRInput.GetDown(OVRInput.Button.One)){
-			SIC.settings.minVolume -= 5.0f;
+			SIC.settings.minVolume -= 1.0f;
+			SIC.settings.minVolume = Mathf.Clamp(SIC.settings.minVolume, -60, 0);
 		}
 
 	}
