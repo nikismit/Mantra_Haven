@@ -12,6 +12,7 @@ public class Levitate_Script : MonoBehaviour {
 	private float levitateSpeed = 0.0f;
 	public GameObject fadePlane;
 	public float fadeTime;
+	public ParticleSystem partSystem;
 
 	// Use this for initialization
 	void Start () {
@@ -21,13 +22,16 @@ public class Levitate_Script : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+		/*
 		if(Input.GetKeyDown(KeyCode.X)){
 			begeleidingAudio.time = begeleidingAudio.clip.length - (levitateTime+10.0f);
 		}
+		*/
 
 		if(begeleidingAudio.time > begeleidingAudio.clip.length - levitateTime){
 			levitate = true;
-			print("Levitate Now!");
+			if (partSystem.maxParticles != 200)
+				partSystem.maxParticles = 200;
 		}
 
 		if(levitate == true){

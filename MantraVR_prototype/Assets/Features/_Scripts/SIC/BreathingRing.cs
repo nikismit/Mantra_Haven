@@ -1,67 +1,78 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class BreathingRing : MonoBehaviour {
-
-	public float breathingInTime = 5.0f;
-	public float breathingOutTime = 5.0f;
-	public float pauseTime = 1.0f;
-	public float startAfterSeconds = 4.0f;
-	private bool started = false;
+public class BreathingRing : MonoBehaviour
+{
 	private bool breathingIn = true;
-	private bool pause = false;
+	private bool pause = true;
 	private float breathingTimer = 0.0f;
-	public Vector3 startScale;
-	public Vector3 endScale;
 
-	// Use this for initialization
-	void Start () {
-		
+	private BreathingRingData _data = new BreathingRingData();
 
-
+	private void Awake()
+	{
+		_data.startScale = new Vector3(1, 1, 1);
+		_data.endScale = new Vector3(1, 1, 1);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(started == false){
-			breathingTimer += Time.deltaTime;
-			if(breathingTimer >= startAfterSeconds){
-				started = true;
-				breathingTimer = 0.0f;
-			}
-		} else {
-			if(pause == false){
-				if(breathingIn == true){
-					this.transform.localScale = Vector3.Lerp(startScale, endScale, breathingTimer/breathingInTime);
-					if(breathingTimer < breathingInTime){
-						breathingTimer += Time.deltaTime;
-					} else {
-						pause = true;
-						breathingIn = false;
-						breathingTimer = 0.0f;
-					}
-			
-				}
-				if(breathingIn == false){
-					this.transform.localScale = Vector3.Lerp(endScale, startScale, breathingTimer/breathingInTime);
-					if (breathingTimer < breathingOutTime){
-						breathingTimer += Time.deltaTime;
-					} else {
-						pause = true;
-						breathingIn = true;
-						breathingTimer = 0.0f;
-					}
-			
-				}
-			} else {
-				if(breathingTimer < pauseTime){
+
+	private void Update()
+	{
+		if (!pause)
+		{
+			if (breathingIn)
+			{
+				// Inhaling
+				TimeData breathingInTime = _data.inhaleEndTime - _data.inhaleStartTime;
+				transform.localScale = Vector3.Lerp(_data.startScale, _data.endScale, breathingTimer / breathingInTime);
+				if (breathingTimer < breathingInTime)
+				{
 					breathingTimer += Time.deltaTime;
-				} else {
-					pause = false;
+				}
+				else
+				{
+					pause = true;
+					breathingIn = false;
+					breathingTimer = 0.0f;
+				}
+			
+			}
+			else
+			{
+				// Exhaling
+				TimeData breathingOutTime = _data.exhaleEndTime - _data.exhaleStartTime;
+				transform.localScale = Vector3.Lerp(_data.endScale, _data.startScale, breathingTimer / breathingOutTime);
+				if (breathingTimer < breathingOutTime)
+				{
+					breathingTimer += Time.deltaTime;
+				}
+				else
+				{
+					pause = true;
+					breathingIn = true;
 					breathingTimer = 0.0f;
 				}
 			}
 		}
+	}
+
+	public void SetData(BreathingRingData data)
+	{
+		_data = data;
+	}
+
+	public void Unpause()
+	{
+		pause = false;
+	}
+
+	public void Unpause(bool inhale)
+	{
+		pause = false;
+		breathingIn = inhale;
+		breathingTimer = 0.0f;
+	}
+
+	public void Pause()
+	{
+		pause = true;
 	}
 }

@@ -1,0 +1,519 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc78a6c2acdf1b646bb8e7e7898d114e, type: 3}
+  m_Name: BreathAudio
+  m_EditorClassIdentifier: 
+  breatheAudioDataList:
+  - inhaleStartTime:
+      seconds: 2.2840583
+      minutes: 0
+    inhaleEndTime:
+      seconds: 7.16839
+      minutes: 0
+    exhaleStartTime:
+      seconds: 8.679917
+      minutes: 0
+    exhaleEndTime:
+      seconds: 13.951217
+      minutes: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 15.0459175
+      minutes: 0
+    inhaleEndTime:
+      seconds: 19.79166
+      minutes: 0
+    exhaleStartTime:
+      seconds: 20.776644
+      minutes: 0
+    exhaleEndTime:
+      seconds: 26.248419
+      minutes: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 27.084793
+      minutes: 0
+    inhaleEndTime:
+      seconds: 32.151295
+      minutes: 0
+    exhaleStartTime:
+      seconds: 33.143654
+      minutes: 0
+    exhaleEndTime:
+      seconds: 38.55825
+      minutes: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 39.35639
+      minutes: 0
+    inhaleEndTime:
+      seconds: 44.463142
+      minutes: 0
+    exhaleStartTime:
+      seconds: 45.765396
+      minutes: 0
+    exhaleEndTime:
+      seconds: 51.21174
+      minutes: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 52.022713
+      minutes: 0
+    inhaleEndTime:
+      seconds: 56.416576
+      minutes: 0
+    exhaleStartTime:
+      seconds: 57.39993
+      minutes: 0
+    exhaleEndTime:
+      seconds: 3.1432874
+      minutes: 1
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 3.8923006
+      minutes: 1
+    inhaleEndTime:
+      seconds: 8.619919
+      minutes: 1
+    exhaleStartTime:
+      seconds: 9.624764
+      minutes: 1
+    exhaleEndTime:
+      seconds: 14.582172
+      minutes: 1
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 15.869444
+      minutes: 1
+    inhaleEndTime:
+      seconds: 20.639936
+      minutes: 1
+    exhaleStartTime:
+      seconds: 21.61708
+      minutes: 1
+    exhaleEndTime:
+      seconds: 26.69959
+      minutes: 1
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 27.253279
+      minutes: 1
+    inhaleEndTime:
+      seconds: 32.11573
+      minutes: 1
+    exhaleStartTime:
+      seconds: 32.924637
+      minutes: 1
+    exhaleEndTime:
+      seconds: 38.056366
+      minutes: 1
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 38.5761
+      minutes: 1
+    inhaleEndTime:
+      seconds: 42.351936
+      minutes: 1
+    exhaleStartTime:
+      seconds: 42.88358
+      minutes: 1
+    exhaleEndTime:
+      seconds: 48.360508
+      minutes: 1
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 49.062683
+      minutes: 1
+    inhaleEndTime:
+      seconds: 53.510654
+      minutes: 1
+    exhaleStartTime:
+      seconds: 54.59917
+      minutes: 1
+    exhaleEndTime:
+      seconds: 58.230755
+      minutes: 1
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 58.695732
+      minutes: 1
+    inhaleEndTime:
+      seconds: 2.2923782
+      minutes: 2
+    exhaleStartTime:
+      seconds: 2.8811018
+      minutes: 2
+    exhaleEndTime:
+      seconds: 9.584281
+      minutes: 2
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 10.273319
+      minutes: 2
+    inhaleEndTime:
+      seconds: 15.415474
+      minutes: 2
+    exhaleStartTime:
+      seconds: 16.187737
+      minutes: 2
+    exhaleEndTime:
+      seconds: 21.977097
+      minutes: 2
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 22.536924
+      minutes: 2
+    inhaleEndTime:
+      seconds: 27.15577
+      minutes: 2
+    exhaleStartTime:
+      seconds: 27.654379
+      minutes: 2
+    exhaleEndTime:
+      seconds: 33.443726
+      minutes: 2
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 34.5095
+      minutes: 2
+    inhaleEndTime:
+      seconds: 40.54731
+      minutes: 2
+    exhaleStartTime:
+      seconds: 41.189503
+      minutes: 2
+    exhaleEndTime:
+      seconds: 49.240982
+      minutes: 2
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 49.99622
+      minutes: 2
+    inhaleEndTime:
+      seconds: 55.911076
+      minutes: 2
+    exhaleStartTime:
+      seconds: 56.877743
+      minutes: 2
+    exhaleEndTime:
+      seconds: 3.9167802
+      minutes: 3
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 4.9257436
+      minutes: 3
+    inhaleEndTime:
+      seconds: 10.155521
+      minutes: 3
+    exhaleStartTime:
+      seconds: 11.188341
+      minutes: 3
+    exhaleEndTime:
+      seconds: 17.703562
+      minutes: 3
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 18.752785
+      minutes: 3
+    inhaleEndTime:
+      seconds: 23.470129
+      minutes: 3
+    exhaleStartTime:
+      seconds: 24.141073
+      minutes: 3
+    exhaleEndTime:
+      seconds: 29.852087
+      minutes: 3
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 30.427359
+      minutes: 3
+    inhaleEndTime:
+      seconds: 35.265167
+      minutes: 3
+    exhaleStartTime:
+      seconds: 35.781567
+      minutes: 3
+    exhaleEndTime:
+      seconds: 40.398273
+      minutes: 3
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 41.192276
+      minutes: 3
+    inhaleEndTime:
+      seconds: 45.423336
+      minutes: 3
+    exhaleStartTime:
+      seconds: 46.295517
+      minutes: 3
+    exhaleEndTime:
+      seconds: 52.67802
+      minutes: 3
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 53.332336
+      minutes: 3
+    inhaleEndTime:
+      seconds: 59.648815
+      minutes: 3
+    exhaleStartTime:
+      seconds: 2.088911
+      minutes: 4
+    exhaleEndTime:
+      seconds: 7.3316503
+      minutes: 4
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 9.603359
+      minutes: 4
+    inhaleEndTime:
+      seconds: 15.008392
+      minutes: 4
+    exhaleStartTime:
+      seconds: 15.4523735
+      minutes: 4
+    exhaleEndTime:
+      seconds: 23.46753
+      minutes: 4
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 24.235104
+      minutes: 4
+    inhaleEndTime:
+      seconds: 30.342138
+      minutes: 4
+    exhaleStartTime:
+      seconds: 31.00354
+      minutes: 4
+    exhaleEndTime:
+      seconds: 41.379807
+      minutes: 4
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 42.464066
+      minutes: 4
+    inhaleEndTime:
+      seconds: 47.795406
+      minutes: 4
+    exhaleStartTime:
+      seconds: 48.29233
+      minutes: 4
+    exhaleEndTime:
+      seconds: 54.916588
+      minutes: 4
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 55.49502
+      minutes: 4
+    inhaleEndTime:
+      seconds: 2.359603
+      minutes: 5
+    exhaleStartTime:
+      seconds: 3.3105621
+      minutes: 5
+    exhaleEndTime:
+      seconds: 8.3956785
+      minutes: 5
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 8.926384
+      minutes: 5
+    inhaleEndTime:
+      seconds: 13.268249
+      minutes: 5
+    exhaleStartTime:
+      seconds: 13.654562
+      minutes: 5
+    exhaleEndTime:
+      seconds: 22.148973
+      minutes: 5
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 22.832544
+      minutes: 5
+    inhaleEndTime:
+      seconds: 28.557035
+      minutes: 5
+    exhaleStartTime:
+      seconds: 29.232338
+      minutes: 5
+    exhaleEndTime:
+      seconds: 44.79727
+      minutes: 5
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 45.620575
+      minutes: 5
+    inhaleEndTime:
+      seconds: 51.166008
+      minutes: 5
+    exhaleStartTime:
+      seconds: 51.796547
+      minutes: 5
+    exhaleEndTime:
+      seconds: 58.394726
+      minutes: 5
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 59.200386
+      minutes: 5
+    inhaleEndTime:
+      seconds: 3.8617656
+      minutes: 6
+    exhaleStartTime:
+      seconds: 4.325693
+      minutes: 6
+    exhaleEndTime:
+      seconds: 12.115979
+      minutes: 6
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 13.032074
+      minutes: 6
+    inhaleEndTime:
+      seconds: 18.404608
+      minutes: 6
+    exhaleStartTime:
+      seconds: 18.807844
+      minutes: 6
+    exhaleEndTime:
+      seconds: 28.190193
+      minutes: 6
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 28.956053
+      minutes: 6
+    inhaleEndTime:
+      seconds: 33.661106
+      minutes: 6
+    exhaleStartTime:
+      seconds: 34.349777
+      minutes: 6
+    exhaleEndTime:
+      seconds: 46.47731
+      minutes: 6
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 47.07896
+      minutes: 6
+    inhaleEndTime:
+      seconds: 52.813423
+      minutes: 6
+    exhaleStartTime:
+      seconds: 54.639587
+      minutes: 6
+    exhaleEndTime:
+      seconds: 3.2055018
+      minutes: 7
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 4.0950027
+      minutes: 7
+    inhaleEndTime:
+      seconds: 10.271453
+      minutes: 7
+    exhaleStartTime:
+      seconds: 10.914703
+      minutes: 7
+    exhaleEndTime:
+      seconds: 24.287622
+      minutes: 7
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 25.517677
+      minutes: 7
+    inhaleEndTime:
+      seconds: 31.563797
+      minutes: 7
+    exhaleStartTime:
+      seconds: 32.131077
+      minutes: 7
+    exhaleEndTime:
+      seconds: 38.6204
+      minutes: 7
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 39.49625
+      minutes: 7
+    inhaleEndTime:
+      seconds: 45.269016
+      minutes: 7
+    exhaleStartTime:
+      seconds: 45.999905
+      minutes: 7
+    exhaleEndTime:
+      seconds: 52.07165
+      minutes: 7
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 52.805676
+      minutes: 7
+    inhaleEndTime:
+      seconds: 0.61265993
+      minutes: 8
+    exhaleStartTime:
+      seconds: 1.4113306
+      minutes: 8
+    exhaleEndTime:
+      seconds: 25.341507
+      minutes: 8
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 26.014626
+      minutes: 8
+    inhaleEndTime:
+      seconds: 32.31919
+      minutes: 8
+    exhaleStartTime:
+      seconds: 33.453674
+      minutes: 8
+    exhaleEndTime:
+      seconds: 39.80901
+      minutes: 8
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
