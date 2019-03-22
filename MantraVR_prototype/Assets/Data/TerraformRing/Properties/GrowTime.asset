@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: GrowTime
   m_EditorClassIdentifier: 
   initialValue:
-    seconds: 1
+    seconds: 2
     minutes: 0
     hours: 0

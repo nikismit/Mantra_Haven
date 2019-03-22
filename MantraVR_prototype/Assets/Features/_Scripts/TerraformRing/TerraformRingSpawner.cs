@@ -13,6 +13,7 @@ public class TerraformRingSpawner : MonoBehaviour
 	private float _pitch = 0.0f;
 	private float _volume = 0.0f;
 	private bool _isSpeaking = false;
+	private bool _canSpawn = true;
 
 	private void Update()
 	{
@@ -29,7 +30,7 @@ public class TerraformRingSpawner : MonoBehaviour
 			SIC.NullifyClipData();
 		}
 
-		if (_isSpeaking)
+		if (_isSpeaking && _canSpawn)
 		{
 			_speakingTimer += Time.deltaTime;
 			
@@ -42,6 +43,11 @@ public class TerraformRingSpawner : MonoBehaviour
 				terraformRingScript.StartGrow();
 				_speakingTimer = 0.0f;
 			}
+		}
+
+		if (OVRInput.GetDown(OVRInput.Button.Two))
+		{
+			_canSpawn = (_canSpawn) ? false : true;
 		}
 	}
 }

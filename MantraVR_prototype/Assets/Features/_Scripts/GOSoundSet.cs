@@ -28,6 +28,5 @@ public class GOSoundSet : MonoBehaviour {
 			SIC.settings.minVolume -= 1.0f;
 			SIC.settings.minVolume = Mathf.Clamp(SIC.settings.minVolume, -60, 0);
 		}
-
 	}
 }

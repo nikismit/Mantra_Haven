@@ -1,6 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 public class TerraformRingDataWindow : EditorWindow
 {
 	private TerraformRingData _data;
@@ -46,3 +47,4 @@ public class TerraformRingDataWindow : EditorWindow
 		EditorGUILayout.EndScrollView();
 	}
 }
+#endif

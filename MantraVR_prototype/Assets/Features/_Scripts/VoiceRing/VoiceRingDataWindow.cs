@@ -1,6 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 public class VoiceRingDataWindow : EditorWindow
 {
 	private VoiceRingData _data;
@@ -72,3 +73,4 @@ public class VoiceRingDataWindow : EditorWindow
 		EditorGUILayout.EndScrollView();
 	}
 }
+#endif
