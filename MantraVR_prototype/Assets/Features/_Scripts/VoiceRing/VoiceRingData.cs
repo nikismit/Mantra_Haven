@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "MantraVR/VoiceRingDataSO")]
+[CreateAssetMenu(menuName = "MantraVR/VoiceRingData")]
 public class VoiceRingData : ScriptableObject
 {
 	public GameObjectVariable prefabVar;

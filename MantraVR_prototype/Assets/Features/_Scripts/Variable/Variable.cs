@@ -16,6 +16,6 @@ public class Variable<T> : ScriptableObject, ISerializationCallbackReceiver
 
 	public void OnBeforeSerialize()
 	{
-
+		
 	}
 }

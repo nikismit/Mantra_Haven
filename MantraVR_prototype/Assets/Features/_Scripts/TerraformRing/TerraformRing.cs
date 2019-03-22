@@ -2,26 +2,29 @@
 
 public class TerraformRing : MonoBehaviour
 {
-	public float moveSpeed;
-	public Vector3 startScale;
-	public Vector3 endScale;
-	public TimeData growTime;
+	[SerializeField]
+	private TerraformRingData _data;
 
 	private bool _isGrowing = false;
 	private float _growTimer = 0.0f;
 
+	public void Setup(TerraformRingData data)
+	{
+		_data = data;
+	}
+
 	private void Update()
 	{
 		// Move
-		transform.position += transform.forward * moveSpeed * Time.deltaTime;
+		transform.position += transform.forward * _data.moveSpeedVar.value * Time.deltaTime;
 
 		// Grow
 		if (_isGrowing)
 		{
 			transform.localScale = Vector3.Lerp(
-				startScale,
-				endScale,
-				_growTimer / growTime
+				_data.startScaleVar.value,
+				_data.endScaleVar.value,
+				_growTimer / _data.growTimeVar.value
 			);
 			_growTimer += Time.deltaTime;
 		}

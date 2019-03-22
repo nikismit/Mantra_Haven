@@ -60,8 +60,8 @@ public class VoiceRingDataWindow : EditorWindow
 
 		GUILayout.Label("Colors from low to high", EditorStyles.boldLabel);
 		SerializedObject pitchColorsVarSO = new SerializedObject(_data.pitchColorsVar);
-		SerializedProperty stringsProperty = pitchColorsVarSO.FindProperty("initialValue");
-		EditorGUILayout.PropertyField(stringsProperty, true);
+		SerializedProperty pitchColorsProperty = pitchColorsVarSO.FindProperty("initialValue");
+		EditorGUILayout.PropertyField(pitchColorsProperty, true);
 		pitchColorsVarSO.ApplyModifiedProperties();
 
 		GUILayout.Label("Light", EditorStyles.boldLabel);
@@ -70,12 +70,5 @@ public class VoiceRingDataWindow : EditorWindow
 		EditorGUILayout.Space();
 
 		EditorGUILayout.EndScrollView();
-
-		/*
-		groupEnabled = EditorGUILayout.BeginToggleGroup("Optional Settings", groupEnabled);
-		myBool = EditorGUILayout.Toggle("Toggle", myBool);
-		myFloat = EditorGUILayout.Slider("Slider", myFloat, -3, 3);
-		EditorGUILayout.EndToggleGroup();
-		*/
 	}
 }

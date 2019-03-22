@@ -4,13 +4,9 @@ using UnityEngine;
 public class TerraformRingSpawner : MonoBehaviour
 {
 	public SoundInputController SIC;
-	public GameObject terraFormRing;
 
 	public int ringSpawningSpeed = 10;
-	public float ringMoveSpeed = 5.0f;
-	public Vector3 ringStartScale;
-	public Vector3 ringEndScale;
-	public TimeData ringGrowTime = new TimeData() { Seconds = 2 };
+	public TerraformRingData data;
 
 	private float _speakingTimer;
 
@@ -39,14 +35,11 @@ public class TerraformRingSpawner : MonoBehaviour
 			
 			if (_speakingTimer >= 1.0f / ringSpawningSpeed)
 			{
-				GameObject currentRing = Instantiate(terraFormRing, transform.position, transform.rotation);
-				TerraformRing terraFormRingScript = currentRing.GetComponent<TerraformRing>();
-				terraFormRingScript.transform.localScale = ringStartScale;
-				terraFormRingScript.moveSpeed = ringMoveSpeed;
-				terraFormRingScript.growTime = ringGrowTime;
-				terraFormRingScript.startScale = ringStartScale;
-				terraFormRingScript.endScale = ringEndScale;
-				terraFormRingScript.StartGrow();
+				GameObject currentRing = Instantiate(data.prefabVar.value, transform.position, transform.rotation);
+				TerraformRing terraformRingScript = currentRing.GetComponent<TerraformRing>();
+				terraformRingScript.transform.localScale = data.startScaleVar.value;
+				terraformRingScript.Setup(data);
+				terraformRingScript.StartGrow();
 				_speakingTimer = 0.0f;
 			}
 		}
