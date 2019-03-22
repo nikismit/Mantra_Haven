@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c9c1abf2a63327478e8f7846e0a3340, type: 3}
+  m_Name: VoiceRingData
+  m_EditorClassIdentifier: 
+  prefabVar: {fileID: 11400000, guid: 37a4cf73bb3325149b32be378d22bccb, type: 2}
+  moveSpeedVar: {fileID: 11400000, guid: c2c72d5789d2a9e46827c48888e775af, type: 2}
+  maxHeightVar: {fileID: 11400000, guid: 6a849ed56cc06d9439841bcda68865f1, type: 2}
+  alphaVar: {fileID: 11400000, guid: 6f861b0abe0aede44961ef0a0ef800c1, type: 2}
+  fadeAfterSecondsVar: {fileID: 11400000, guid: 3f17fd5af5d17f44c9aa482aa071eeb4,
+    type: 2}
+  fadeSpeedVar: {fileID: 11400000, guid: 047a9a53f28d2d449859513d04f5dc9d, type: 2}
+  noiseHeightVar: {fileID: 11400000, guid: ab7879ead8867fc4bba06b4c7e0c9772, type: 2}
+  noiseRandomizerVar: {fileID: 11400000, guid: f758b92b0002bb54a8b007e5a2ef2a29, type: 2}
+  noiseSmoothnessVar: {fileID: 11400000, guid: 13fe083060dcb2c4799261b61ac859e8, type: 2}
+  noiseWidthVar: {fileID: 11400000, guid: f848982bea3edeb4e8f6ab3cf8b72d1f, type: 2}
+  noiseWidthExponentVar: {fileID: 11400000, guid: 97f85e1f7986b0e41829b4950f5c32cb,
+    type: 2}
+  verticesRandomizerVar: {fileID: 11400000, guid: 0b8d18654a7036a4eaea545d8217d2ec,
+    type: 2}
+  volumeSpeedVar: {fileID: 11400000, guid: 523cd1faa8f6e6b4193608b47cb64e73, type: 2}
+  volumeOffsetFactorVar: {fileID: 11400000, guid: 5e50ae4aef5f8ef4781e56a31d19b25f,
+    type: 2}
+  minVolumeVar: {fileID: 11400000, guid: deb94906a34aaa34ebffae9556678c88, type: 2}
+  pitchSpeedVar: {fileID: 11400000, guid: 20f47bae5f07a6a4b96f3ba402732824, type: 2}
+  pitchOffsetFactorVar: {fileID: 11400000, guid: 05cbc1c9c4b3a58468dd177a6ebcd8e8,
+    type: 2}
+  secondsBetweenSpawningVar: {fileID: 11400000, guid: 1f76615239cf4fe4dbb6c45480b9eaa1,
+    type: 2}
+  pitchColorsVar: {fileID: 11400000, guid: 3bc9db69f56efa54aa42b1dbfd26db9b, type: 2}
+  lightColorSpeedVar: {fileID: 11400000, guid: b8e3c87edd06fe742a10277fdc283ae6, type: 2}

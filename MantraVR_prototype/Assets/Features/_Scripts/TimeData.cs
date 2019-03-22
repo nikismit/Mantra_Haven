@@ -3,14 +3,76 @@
 [System.Serializable]
 public struct TimeData
 {
-	public float seconds;
-	public float minutes;
+	[SerializeField]
+	private float seconds;
+	[SerializeField]
+	private float minutes;
+	[SerializeField]
+	private float hours;
+
+	public float Seconds
+	{
+		get
+		{
+			return seconds;
+		}
+
+		set
+		{
+			seconds = value;
+
+			TimeLogic();
+		}
+	}
+	public float Minutes
+	{
+		get
+		{
+			return minutes;
+		}
+
+		set
+		{
+			minutes = value;
+
+			TimeLogic();
+		}
+	}
+	public float Hours
+	{
+		get
+		{
+			return hours;
+		}
+
+		set
+		{
+			hours = value;
+
+			TimeLogic();
+		}
+	}
 
 	public float TotalSeconds
 	{
 		get
 		{
-			return seconds + minutes * 60;
+			return Seconds + Minutes * 60 + Hours * 60;
+		}
+	}
+
+	private void TimeLogic()
+	{
+		while (seconds >= 60f)
+		{
+			minutes++;
+			seconds -= 60f;
+		}
+
+		while (minutes >= 60f)
+		{
+			minutes -= 60f;
+			hours++;
 		}
 	}
 
@@ -23,12 +85,12 @@ public struct TimeData
 		if (totalSeconds < 0f)
 			Debug.LogWarning("Cannot have a negative value for TimeData.seconds");
 
-		timeData.seconds = totalSeconds;
+		timeData.Seconds = totalSeconds;
 
-		while (timeData.seconds >= 60f)
+		while (timeData.Seconds >= 60f)
 		{
-			timeData.minutes++;
-			timeData.seconds -= 60f;
+			timeData.Minutes++;
+			timeData.Seconds -= 60f;
 		}
 
 		return timeData;
@@ -43,12 +105,12 @@ public struct TimeData
 		if (totalSeconds < 0f)
 			Debug.LogWarning("Cannot have a negative value for TimeData.seconds");
 
-		timeData.seconds = totalSeconds;
+		timeData.Seconds = totalSeconds;
 
-		while (timeData.seconds >= 60f)
+		while (timeData.Seconds >= 60f)
 		{
-			timeData.minutes++;
-			timeData.seconds -= 60f;
+			timeData.Minutes++;
+			timeData.Seconds -= 60f;
 		}
 
 		return timeData;
@@ -63,12 +125,12 @@ public struct TimeData
 		if (totalSeconds < 0f)
 			Debug.LogWarning("Cannot have a negative value for TimeData.seconds");
 
-		timeData.seconds = totalSeconds;
+		timeData.Seconds = totalSeconds;
 
-		while (timeData.seconds >= 60f)
+		while (timeData.Seconds >= 60f)
 		{
-			timeData.minutes++;
-			timeData.seconds -= 60f;
+			timeData.Minutes++;
+			timeData.Seconds -= 60f;
 		}
 
 		return timeData;

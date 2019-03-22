@@ -743,7 +743,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199450614}
   m_LocalRotation: {x: -0, y: -0.7072302, z: -0.7069834, w: 0}
-  m_LocalPosition: {x: 0, y: -0.00579, z: -0}
+  m_LocalPosition: {x: 0, y: -0.00228, z: -0}
   m_LocalScale: {x: 0.010000005, y: 0.010000001, z: 0.009999999}
   m_Children: []
   m_Father: {fileID: 238617888}
@@ -841,7 +841,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SIC: {fileID: 2114470214}
-  _data: {fileID: 11400000, guid: 926f1696b24ce1f4ea6382e27699538e, type: 2}
+  _dataOld: {fileID: 11400000, guid: 926f1696b24ce1f4ea6382e27699538e, type: 2}
+  _data: {fileID: 11400000, guid: 64db750d84691d744bfa856e43f368dd, type: 2}
   _light: {fileID: 199450616}
 --- !u!4 &238617888 stripped
 Transform:
@@ -849,6 +850,60 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 238617885}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &306843610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 306843611}
+  - component: {fileID: 306843612}
+  m_Layer: 0
+  m_Name: TerraformRingSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &306843611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306843610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.2, z: 0.28}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1760674418}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &306843612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306843610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 252aab12cf517394d92d8e1eef1f6187, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SIC: {fileID: 2114470214}
+  terraFormRing: {fileID: 4317967549973005039, guid: 2042067ad576eae42ae2c737caef7022,
+    type: 3}
+  ringSpawningSpeed: 5
+  ringMoveSpeed: 5
+  ringStartScale: {x: 0.2, y: 0.2, z: 0.2}
+  ringEndScale: {x: 1, y: 1, z: 1}
+  ringGrowTime:
+    seconds: 1
+    minutes: 0
+    hours: 0
 --- !u!1001 &473631806
 PrefabInstance:
   m_ObjectHideFlags: 0

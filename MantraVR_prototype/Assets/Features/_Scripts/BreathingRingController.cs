@@ -33,12 +33,12 @@ public class BreathingRingController : MonoBehaviour
 		}
 
 		// Update Timer
-		_currentTime.seconds += Time.deltaTime;
+		_currentTime.Seconds += Time.deltaTime;
 
-		if (_currentTime.seconds >= 60)
+		if (_currentTime.Seconds >= 60)
 		{
-			_currentTime.seconds -= 60;
-			_currentTime.minutes++;
+			_currentTime.Seconds -= 60;
+			_currentTime.Minutes++;
 		}
 	}
 

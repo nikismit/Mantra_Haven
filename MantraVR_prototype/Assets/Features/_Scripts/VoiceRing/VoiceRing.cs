@@ -25,7 +25,7 @@ public class VoiceRing : MonoBehaviour
 
 	private void Start()
 	{
-		StartCoroutine(WaitForFade(_data.fadeAfterSeconds));
+		StartCoroutine(WaitForFade(_data.fadeAfterSecondsVar.value));
 	}
 
 	public void Setup(VoiceRingData voiceRingData, SoundInputController soundInputController)
@@ -39,13 +39,13 @@ public class VoiceRing : MonoBehaviour
 		_pitch = SIC.inputData.relativeFrequency;
 		_volume = SIC.inputData.relativeAmplitude;
 
-		_currentPitch = LerpPitch(_data.pitchOffsetFactor, 1);
-		_currentVolume = (_volume > 0) ? LerpVolume(_data.volumeOffsetFactor, 1) : 0.0f;
+		_currentPitch = LerpPitch(_data.pitchOffsetFactorVar.value, 1);
+		_currentVolume = (_volume > 0) ? LerpVolume(_data.volumeOffsetFactorVar.value, 1) : 0.0f;
 
 		transform.localScale = new Vector3(
-			transform.localScale.x + _currentVolume + _data.speed * Time.deltaTime,
-			transform.localScale.y + _currentVolume + _data.speed * Time.deltaTime,
-			transform.localScale.z + _currentVolume + _data.speed * Time.deltaTime
+			transform.localScale.x + _currentVolume + _data.moveSpeedVar.value * Time.deltaTime,
+			transform.localScale.y + _currentVolume + _data.moveSpeedVar.value * Time.deltaTime,
+			transform.localScale.z + _currentVolume + _data.moveSpeedVar.value * Time.deltaTime
 		);
 
 		// Fading
@@ -54,7 +54,7 @@ public class VoiceRing : MonoBehaviour
 			Color newColor = _meshRenderer.material.color;
 			float startAlpha = newColor.a;
 
-			newColor.a = Mathf.Lerp(startAlpha, 0f, Time.deltaTime * _data.fadeSpeed);
+			newColor.a = Mathf.Lerp(startAlpha, 0f, Time.deltaTime * _data.fadeSpeedVar.value);
 
 			if (newColor.a <= 0.01)
 				newColor.a = 0;
@@ -75,32 +75,32 @@ public class VoiceRing : MonoBehaviour
 	#region VoiceRing Lerp
 	private float LerpVolume()
 	{
-		return Mathf.Lerp(_currentVolume, _volume, Time.deltaTime * _data.volumeSpeed);
+		return Mathf.Lerp(_currentVolume, _volume, Time.deltaTime * _data.volumeSpeedVar.value);
 	}
 
 	private float LerpVolume(float offsetFactor)
 	{
-		return Mathf.Lerp(_currentVolume, _volume * offsetFactor, Time.deltaTime * _data.volumeSpeed);
+		return Mathf.Lerp(_currentVolume, _volume * offsetFactor, Time.deltaTime * _data.volumeSpeedVar.value);
 	}
 
 	private float LerpVolume(float offsetFactor, float speedFactor)
 	{
-		return Mathf.Lerp(_currentVolume, _volume * offsetFactor, Time.deltaTime * _data.volumeSpeed * speedFactor);
+		return Mathf.Lerp(_currentVolume, _volume * offsetFactor, Time.deltaTime * _data.volumeSpeedVar.value * speedFactor);
 	}
 
 	private float LerpPitch()
 	{
-		return Mathf.Lerp(_currentPitch, _pitch, Time.deltaTime * _data.pitchSpeed);
+		return Mathf.Lerp(_currentPitch, _pitch, Time.deltaTime * _data.pitchSpeedVar.value);
 	}
 
 	private float LerpPitch(float offsetFactor)
 	{
-		return Mathf.Lerp(_currentPitch, _pitch * offsetFactor, Time.deltaTime * _data.pitchSpeed);
+		return Mathf.Lerp(_currentPitch, _pitch * offsetFactor, Time.deltaTime * _data.pitchSpeedVar.value);
 	}
 
 	private float LerpPitch(float offsetFactor, float speedFactor)
 	{
-		return Mathf.Lerp(_currentPitch, _pitch * offsetFactor, Time.deltaTime * _data.pitchSpeed * speedFactor);
+		return Mathf.Lerp(_currentPitch, _pitch * offsetFactor, Time.deltaTime * _data.pitchSpeedVar.value * speedFactor);
 	}
 	#endregion
 }
