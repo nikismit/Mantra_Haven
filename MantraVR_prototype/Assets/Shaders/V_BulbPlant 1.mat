@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: V_BulbPlant 1
+  m_Shader: {fileID: 4800000, guid: 7613c3bfb081d814ba54660bd6324190, type: 3}
+  m_ShaderKeywords: _ORIENTATION_Z _RIMCOLOR1ONLY_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Foam:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HazeMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Metallic:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normals:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Occlusion:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RockAlbedo:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RockNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RockSpecular:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SnowAlbedo:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SnowNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SnowSpecular:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: 16d574e53541bba44a84052fa38778df, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BASEcolor1only: 0
+    - _Bias: 0.321
+    - _Breathvalue: 0.061
+    - _BumpScale: 1
+    - _ChromaticAberration: 0.1
+    - _Cleancut: 0
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _Distribution: -1.03
+    - _DstBlend: 0
+    - _EdgeLength: 2
+    - _Exp: 0.7
+    - _Float0: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HazeHAmp: 0
+    - _HazeHFreq: 0
+    - _HazeNormalIntensity: 0.1
+    - _HazeVSpeed: 0
+    - _IndexofRefraction: 1
+    - _Intensity: 0.6
+    - _Intensitybreathvalue: 1.2
+    - _InvFade: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Opacity: 0
+    - _Orientation: 2
+    - _Parallax: 0.02
+    - _Power: 8.8
+    - _RIMbias: 0
+    - _RIMcleancut: 0
+    - _RIMcolor1only: 1
+    - _RIMintensity: 0
+    - _RIMpower: 0
+    - _RimPower: 2.42
+    - _Smoothness: 0.8
+    - _SmoothnessTextureChannel: 0
+    - _SnowAmount: 0.13
+    - _SoapAmount: 0
+    - _Specular: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Startpoint: -0.72
+    - _SunIntensity: 2
+    - _SunRadiusA: 0.0337
+    - _SunRadiusB: 0.0289
+    - _ThicknessFresnel: 0.85
+    - _TransAmbient: 0.2
+    - _TransDirect: 1
+    - _TransNormalDistortion: 0.1
+    - _TransScattering: 2
+    - _TransShadow: 0.9
+    - _Translucency: 1
+    - _UVSec: 0
+    - _Value2: 0.3
+    - _ZWrite: 1
+    - __dirty: 0
+    - _addlumi: 0.95
+    - _gloss: 0
+    - _gradientloc: 0.29
+    - _gradientlocnotworking: -0.66
+    - _lightintens: 0
+    - _lumi: 1.09
+    - _luminositygradient: 0
+    - _node_3668: 0
+    - _node_433: 0
+    - _node_4908: 0
+    - _rim: 7.51
+    - _wrap: 0
+    m_Colors:
+    - _BASEcolor1: {r: 0.99534106, g: 1, b: 0.023584902, a: 0}
+    - _BASEcolor2: {r: 1, g: 0, b: 0.8913307, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color0: {r: 1, g: 0.5006077, b: 0, a: 0}
+    - _Color1: {r: 0.29245278, g: 0, b: 0.27524966, a: 0}
+    - _Color2: {r: 0.65517235, g: 0, b: 1, a: 0}
+    - _Colorbase: {r: 1, g: 0.9333333, b: 0, a: 0}
+    - _Colorrim: {r: 1, g: 0.32547122, b: 0.8333518, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HorizonColor: {r: 0, g: 0.472, b: 1, a: 1}
+    - _RIMcolor1: {r: 0.46274507, g: 0.9957084, b: 1, a: 0}
+    - _RIMcolor2: {r: 0, g: 0.9525461, b: 1, a: 0}
+    - _RimColor: {r: 1, g: 0, b: 0, a: 0}
+    - _SkyColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _ambientcolor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _basecolor: {r: 0.25121096, g: 0.20242205, b: 0.35294116, a: 1}
+    - _basecolor1: {r: 0.25121096, g: 0.20242205, b: 0.35294116, a: 1}
+    - _basecolor_copy: {r: 0.5511156, g: 0, b: 0.5588235, a: 1}
+    - _basecolordiffuse: {r: 0.25121096, g: 0.20242205, b: 0.35294116, a: 1}
+    - _basecolorwrap: {r: 0.5511156, g: 0, b: 0.5588235, a: 1}
+    - _edge1: {r: 0.40008646, g: 0.6798114, b: 0.73529416, a: 1}
+    - _glowcolor: {r: 1, g: 0, b: 0, a: 1}
+    - _gradientcolor: {r: 0, g: 1, b: 0.08965514, a: 1}
+    - _node_1468: {r: 0, g: 1, b: 0.08965514, a: 1}
+    - _node_2418: {r: 0.40008646, g: 0.6798114, b: 0.73529416, a: 1}
+    - _node_2762: {r: 1, g: 0, b: 0, a: 1}
+    - _node_6600: {r: 1, g: 0, b: 0, a: 1}
+    - _node_9448_copy: {r: 0, g: 1, b: 0.9586205, a: 1}
+    - _normaldircolordiffuse: {r: 0.40008646, g: 0.6798114, b: 0.73529416, a: 1}
+    - _normaldirwrap: {r: 0, g: 1, b: 0.9586205, a: 1}
