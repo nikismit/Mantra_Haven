@@ -8,9 +8,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DotPlantMesh
-  m_Shader: {fileID: 4800000, guid: 303b8468589995148b2ca99df52f639d, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _EMISSION
-  m_LightmapFlags: 0
+  m_Shader: {fileID: 4800000, guid: 04e120a842cda164f88eb14307226d1d, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _EMISSION _ORIENTATION_X _RIMCLEANCUT_ON
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -60,28 +60,50 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _BASEcolor1only: 0
+    - _Bias: 0.5
     - _BumpScale: 1
+    - _Cleancut: 0
     - _Cutoff: 0.161
     - _DetailNormalMapScale: 1
+    - _Distribution: 0.2
     - _DstBlend: 0
+    - _EdgeLength: 27.2
     - _GlossMapScale: 1
     - _Glossiness: 0.276
     - _GlossyReflections: 1
+    - _Intensity: 0.5
     - _Luminositygradient: 1
     - _Metallic: 0
     - _Mode: 1
     - _OcclusionStrength: 1
+    - _Orientation: 0
     - _Parallax: 0.02
+    - _Power: 10
+    - _RIMbias: 0.5
+    - _RIMcleancut: 1
+    - _RIMcolor1only: 0
+    - _RIMintensity: 0.5
+    - _RIMpower: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Startpoint: 0
     - _UVSec: 0
-    - _Value2: -2
+    - _Value2: -1.25
     - _ZWrite: 1
     - __dirty: 0
+    - _addlumi: 0
+    - _globalBreathValue: 1
     m_Colors:
-    - _Basecolor: {r: 1, g: 0.84019786, b: 0, a: 0}
+    - _BASEcolor1: {r: 1, g: 0, b: 0, a: 0}
+    - _BASEcolor2: {r: 0.03448248, g: 0, b: 1, a: 0}
+    - _Basecolor: {r: 1, g: 0.08608717, b: 0, a: 0}
     - _Color: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 1}
+    - _Colorbase: {r: 1, g: 1, b: 1, a: 0}
+    - _Colorrim: {r: 1, g: 0.029075116, b: 0, a: 0}
     - _EmissionColor: {r: 1.3114249, g: 1.3114249, b: 1.3114249, a: 1}
     - _Glowcolor: {r: 1, g: 0.6489019, b: 0, a: 0}
+    - _RIMcolor1: {r: 1, g: 1, b: 1, a: 0}
+    - _RIMcolor2: {r: 0.9912779, g: 1, b: 0.36764708, a: 0}
     - _glowcolor: {r: 0.9577581, g: 1, b: 0.47641504, a: 0}

@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 1, g: 1, b: 1, a: 0}
-  m_FogMode: 1
-  m_FogDensity: 0.01
+  m_Fog: 1
+  m_FogColor: {r: 0.33088237, g: 0, b: 0.21410024, a: 0.009}
+  m_FogMode: 2
+  m_FogDensity: 0.2
   m_LinearFogStart: 10.28
   m_LinearFogEnd: 25.04
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -696,7 +696,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &199450615
 Light:
   m_ObjectHideFlags: 0
@@ -766,11 +766,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d37257a83aa4c1b4599371b3f440a366, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.14
+      value: -1.38
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d37257a83aa4c1b4599371b3f440a366, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.985
+      value: 4.99
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d37257a83aa4c1b4599371b3f440a366, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1981,7 +1981,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.0005
+      scalar: 0.002
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -6346,7 +6346,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 6665422765734764ea2d9210839b9a67, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e47db907806add749a535067ee33b6e5, type: 2}
+      objectReference: {fileID: 2100000, guid: f6b2531847ca85346a29739fdbf937ab, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6665422765734764ea2d9210839b9a67, type: 3}
 --- !u!4 &1321637533 stripped
@@ -7263,3 +7263,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 782462b9c38abb543a057ad15d100279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2114713796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 6665422765734764ea2d9210839b9a67,
+    type: 3}
+  m_PrefabInstance: {fileID: 1275391169}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2114713797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114713796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291ee194fde55104aa187a6b78f62811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SIC: {fileID: 2114470214}
+  voiceRingSpawner: {fileID: 238617887}
+  pitchSpeed: 6
+  volumeSpeed: 6
+  mantraColorSpeed: 3

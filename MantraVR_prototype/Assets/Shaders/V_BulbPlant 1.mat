@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: V_BulbPlant 1
-  m_Shader: {fileID: 4800000, guid: 7613c3bfb081d814ba54660bd6324190, type: 3}
+  m_Shader: {fileID: 4800000, guid: 6c8f6458a3a804d46a091fdc85aa00f6, type: 3}
   m_ShaderKeywords: _ORIENTATION_Z _RIMCOLOR1ONLY_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -140,6 +140,7 @@ Material:
     - _Intensity: 0.6
     - _Intensitybreathvalue: 1.2
     - _InvFade: 1
+    - _Luminositygradient: 0
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -172,10 +173,11 @@ Material:
     - _TransShadow: 0.9
     - _Translucency: 1
     - _UVSec: 0
-    - _Value2: 0.3
+    - _Value2: -0.87
     - _ZWrite: 1
     - __dirty: 0
     - _addlumi: 0.95
+    - _globalBreathValue: 1
     - _gloss: 0
     - _gradientloc: 0.29
     - _gradientlocnotworking: -0.66
@@ -190,6 +192,7 @@ Material:
     m_Colors:
     - _BASEcolor1: {r: 0.99534106, g: 1, b: 0.023584902, a: 0}
     - _BASEcolor2: {r: 1, g: 0, b: 0.8913307, a: 0}
+    - _Basecolor: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 1, g: 0.5006077, b: 0, a: 0}
     - _Color1: {r: 0.29245278, g: 0, b: 0.27524966, a: 0}
@@ -197,6 +200,7 @@ Material:
     - _Colorbase: {r: 1, g: 0.9333333, b: 0, a: 0}
     - _Colorrim: {r: 1, g: 0.32547122, b: 0.8333518, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Glowcolor: {r: 1, g: 0, b: 0, a: 0}
     - _HorizonColor: {r: 0, g: 0.472, b: 1, a: 1}
     - _RIMcolor1: {r: 0.46274507, g: 0.9957084, b: 1, a: 0}
     - _RIMcolor2: {r: 0, g: 0.9525461, b: 1, a: 0}
@@ -210,7 +214,7 @@ Material:
     - _basecolordiffuse: {r: 0.25121096, g: 0.20242205, b: 0.35294116, a: 1}
     - _basecolorwrap: {r: 0.5511156, g: 0, b: 0.5588235, a: 1}
     - _edge1: {r: 0.40008646, g: 0.6798114, b: 0.73529416, a: 1}
-    - _glowcolor: {r: 1, g: 0, b: 0, a: 1}
+    - _glowcolor: {r: 0, g: 0, b: 0, a: 1}
     - _gradientcolor: {r: 0, g: 1, b: 0.08965514, a: 1}
     - _node_1468: {r: 0, g: 1, b: 0.08965514, a: 1}
     - _node_2418: {r: 0.40008646, g: 0.6798114, b: 0.73529416, a: 1}

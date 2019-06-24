@@ -23,6 +23,15 @@ public class VoiceRingSpawner : MonoBehaviour
 
 	private bool _canSpawn = true;
 
+	private Color _currentMantraColor;
+	public Color CurrentMantraColor
+	{
+		get
+		{
+			return _currentMantraColor;
+		}
+	}
+
 	public VoiceRingData Data
 	{
 		get
@@ -57,9 +66,10 @@ public class VoiceRingSpawner : MonoBehaviour
 		_volume = SIC.inputData.relativeAmplitude;
 
 		_currentPitch = Mathf.Clamp(LerpPitch(_data.pitchOffsetFactorVar.value, 1), 0f, _data.maxHeightVar.value);
+		_data.noiseRandomizerVar.value = _currentPitch;
 		_currentVolume = (_volume > 0) ? LerpVolume(_data.volumeOffsetFactorVar.value, 1) : 0.0f;
 
-		transform.position = new Vector3(transform.position.x, _startPosition.y + _currentPitch, transform.position.z);
+		transform.position = new Vector3(transform.position.x, _startPosition.y, transform.position.z);
 
 		// Light
 		Light light = _light.GetComponent<Light>();
@@ -82,7 +92,7 @@ public class VoiceRingSpawner : MonoBehaviour
 
 		voiceRing.GetComponent<VoiceRing>().Setup(_data, SIC);
 
-		Color partColor = Color.white;
+		_currentMantraColor = Color.white;
 		//set color of particle based on pitch
 		float scaledTime = _currentPitch * 1.2f * (float)(_data.pitchColorsVar.value.Count - 1);
 		int oldColorIndex = (int)(scaledTime);
@@ -90,14 +100,15 @@ public class VoiceRingSpawner : MonoBehaviour
 		int newColorIndex = (int)(scaledTime + 1f);
 		Color newColor = (newColorIndex <= _data.pitchColorsVar.value.Count - 1) ? _data.pitchColorsVar.value[newColorIndex] : _data.pitchColorsVar.value[_data.pitchColorsVar.value.Count - 1];
 		float newT = scaledTime - Mathf.Round(scaledTime);
-		partColor = Color.Lerp(oldColor, newColor, newT);
-		partColor.a = _data.alphaVar.value;
-		voiceRing.GetComponent<MeshRenderer>().material.color = partColor;
-		_light.GetComponent<Light>().color = partColor;
+		_currentMantraColor = Color.Lerp(oldColor, newColor, newT);
+		_currentMantraColor.a = _data.alphaVar.value;
+		voiceRing.GetComponent<MeshRenderer>().material.color = _currentMantraColor;
+		_light.GetComponent<Light>().color = _currentMantraColor;
 
 		// Change mesh using Perlin Noise
 		Mesh mesh = voiceRing.GetComponent<MeshFilter>().mesh;
 		Vector3[] vertices = mesh.vertices;
+		Color[] meshColors = new Color[vertices.Length];
 		List<int> outerVertices = new List<int> { 0, 3, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126 };
 		List<int> innerVertices = new List<int> { 1, 2, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77, 79, 81, 83, 85, 87, 89, 91, 93, 95, 97, 99, 101, 103, 105, 107, 109, 111, 113, 115, 117, 119, 121, 123, 125, 127 };
 

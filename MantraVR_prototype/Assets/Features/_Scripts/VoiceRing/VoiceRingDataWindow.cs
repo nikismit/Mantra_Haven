@@ -37,14 +37,14 @@ public class VoiceRingDataWindow : EditorWindow
 		_data.maxHeightVar.initialValue =				EditorGUILayout.Slider("Max Height",				_data.maxHeightVar.initialValue,				0f,		5f);
 		_data.alphaVar.initialValue =					EditorGUILayout.Slider("Alpha",						_data.alphaVar.initialValue,					0f,		1f);
 		_data.fadeAfterSecondsVar.initialValue =		EditorGUILayout.Slider("Fade After Seconds",		_data.fadeAfterSecondsVar.initialValue,			0f,		50f);
-		_data.fadeSpeedVar.initialValue =				EditorGUILayout.Slider("Fade Speed",				_data.fadeSpeedVar.initialValue,				0.1f,	10f);
+		_data.fadeSpeedVar.initialValue =				EditorGUILayout.Slider("Fade Speed",				_data.fadeSpeedVar.initialValue,				0.1f,	100f);
 
 		GUILayout.Label("Voice Ring Noise", EditorStyles.boldLabel);
 		_data.noiseHeightVar.initialValue =				EditorGUILayout.Slider("Noise Height",				_data.noiseHeightVar.initialValue,				0f,		1f);
 		_data.noiseRandomizerVar.initialValue =			EditorGUILayout.Slider("Noise Randomizer",			_data.noiseRandomizerVar.initialValue,			0f,		2f);
 		_data.noiseSmoothnessVar.initialValue =			EditorGUILayout.Slider("Noise Smoothness",			_data.noiseSmoothnessVar.initialValue,			1f,		10f);
 		_data.noiseWidthVar.initialValue =				EditorGUILayout.Slider("Noise Width",				_data.noiseWidthVar.initialValue,				0f,		0.0005f);
-		_data.noiseWidthExponentVar.initialValue =		EditorGUILayout.Slider("Noise Width Exponent",		_data.noiseWidthExponentVar.initialValue,		1f,		5f);
+		_data.noiseWidthExponentVar.initialValue =		EditorGUILayout.Slider("Noise Width Exponent",		_data.noiseWidthExponentVar.initialValue,		-1f,	2f);
 		_data.verticesRandomizerVar.initialValue =		EditorGUILayout.Slider("Vertices Randomizer",		_data.verticesRandomizerVar.initialValue,		0f,		0.003f);
 
 		GUILayout.Label("Volume", EditorStyles.boldLabel);

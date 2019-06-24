@@ -25,7 +25,7 @@ public class VoiceRing : MonoBehaviour
 
 	private void Start()
 	{
-		StartCoroutine(WaitForFade(_data.fadeAfterSecondsVar.value));
+		//StartCoroutine(WaitForFade(_data.fadeAfterSecondsVar.value));
 	}
 
 	public void Setup(VoiceRingData voiceRingData, SoundInputController soundInputController)
@@ -49,8 +49,14 @@ public class VoiceRing : MonoBehaviour
 		);
 
 		// Fading
-		if (_isFading)
+		if (transform.localScale.x >= 2000)
 		{
+			transform.localScale = new Vector3(
+				transform.localScale.x,
+				transform.localScale.y,
+				transform.localScale.z - 18
+			);
+
 			Color newColor = _meshRenderer.material.color;
 			float startAlpha = newColor.a;
 
@@ -59,9 +65,12 @@ public class VoiceRing : MonoBehaviour
 			if (newColor.a <= 0.01)
 				newColor.a = 0;
 
-			_meshRenderer.material.color = newColor;
+			//_meshRenderer.material.color = newColor;
 
 			if (newColor.a <= 0)
+				Destroy(gameObject);
+
+			if (transform.localScale.z <= 0)
 				Destroy(gameObject);
 		}
 	}
