@@ -439,7 +439,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: b47e27b40615fac42bdf0cf18c739e3e, type: 3}
+      objectReference: {fileID: 8300000, guid: 75678d3b3da371d4eb202389fd577f53, type: 3}
     - target: {fileID: 114114643483469414, guid: 14be4032e3925cf46a20a5c3dc6276d6,
         type: 3}
       propertyPath: levitateTime
@@ -6556,7 +6556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a106905dded2303439fb9e550d67b13a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  breatheAudio: {fileID: 11400000, guid: 6692508e8aadd7f44ab2a9d4beeef387, type: 2}
+  breatheAudio: {fileID: 11400000, guid: 312dde4cc6e9d424caf707f815ec50da, type: 2}
   breathingRing: {fileID: 1360748882}
   defaultStartScale: {x: 1, y: 1, z: 1}
   defaultEndScale: {x: 3, y: 3, z: 3}

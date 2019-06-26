@@ -1,0 +1,357 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc78a6c2acdf1b646bb8e7e7898d114e, type: 3}
+  m_Name: BreathAudioOefeningen
+  m_EditorClassIdentifier: 
+  breatheAudioDataList:
+  - inhaleStartTime:
+      seconds: 37.92
+      minutes: 0
+      hours: 0
+    inhaleEndTime:
+      seconds: 40.955162
+      minutes: 0
+      hours: 0
+    exhaleStartTime:
+      seconds: 42
+      minutes: 0
+      hours: 0
+    exhaleEndTime:
+      seconds: 46.71
+      minutes: 0
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 47.35
+      minutes: 0
+      hours: 0
+    inhaleEndTime:
+      seconds: 50.722652
+      minutes: 0
+      hours: 0
+    exhaleStartTime:
+      seconds: 51.64
+      minutes: 0
+      hours: 0
+    exhaleEndTime:
+      seconds: 56.743446
+      minutes: 0
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 57.64
+      minutes: 0
+      hours: 0
+    inhaleEndTime:
+      seconds: 0.02770392
+      minutes: 1
+      hours: 0
+    exhaleStartTime:
+      seconds: 0.85
+      minutes: 1
+      hours: 0
+    exhaleEndTime:
+      seconds: 6.42
+      minutes: 1
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 9
+      minutes: 1
+      hours: 0
+    inhaleEndTime:
+      seconds: 11.532531
+      minutes: 1
+      hours: 0
+    exhaleStartTime:
+      seconds: 12.21
+      minutes: 1
+      hours: 0
+    exhaleEndTime:
+      seconds: 17.78
+      minutes: 1
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 18.64
+      minutes: 1
+      hours: 0
+    inhaleEndTime:
+      seconds: 20.78
+      minutes: 1
+      hours: 0
+    exhaleStartTime:
+      seconds: 21.85
+      minutes: 1
+      hours: 0
+    exhaleEndTime:
+      seconds: 27.42
+      minutes: 1
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 28.28
+      minutes: 1
+      hours: 0
+    inhaleEndTime:
+      seconds: 30
+      minutes: 1
+      hours: 0
+    exhaleStartTime:
+      seconds: 31.5
+      minutes: 1
+      hours: 0
+    exhaleEndTime:
+      seconds: 37.07
+      minutes: 1
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 57
+      minutes: 1
+      hours: 0
+    inhaleEndTime:
+      seconds: 0.42
+      minutes: 2
+      hours: 0
+    exhaleStartTime:
+      seconds: 1.6
+      minutes: 2
+      hours: 0
+    exhaleEndTime:
+      seconds: 6.85
+      minutes: 2
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 7.17
+      minutes: 2
+      hours: 0
+    inhaleEndTime:
+      seconds: 9.64
+      minutes: 2
+      hours: 0
+    exhaleStartTime:
+      seconds: 11.46
+      minutes: 2
+      hours: 0
+    exhaleEndTime:
+      seconds: 17.14
+      minutes: 2
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 17.35
+      minutes: 2
+      hours: 0
+    inhaleEndTime:
+      seconds: 19.5
+      minutes: 2
+      hours: 0
+    exhaleStartTime:
+      seconds: 21.28
+      minutes: 2
+      hours: 0
+    exhaleEndTime:
+      seconds: 27.1
+      minutes: 2
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 39.21
+      minutes: 2
+      hours: 0
+    inhaleEndTime:
+      seconds: 40.92
+      minutes: 2
+      hours: 0
+    exhaleStartTime:
+      seconds: 42.71
+      minutes: 2
+      hours: 0
+    exhaleEndTime:
+      seconds: 48.85
+      minutes: 2
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 49.28
+      minutes: 2
+      hours: 0
+    inhaleEndTime:
+      seconds: 51
+      minutes: 2
+      hours: 0
+    exhaleStartTime:
+      seconds: 52.85
+      minutes: 2
+      hours: 0
+    exhaleEndTime:
+      seconds: 58.92
+      minutes: 2
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 59.35
+      minutes: 2
+      hours: 0
+    inhaleEndTime:
+      seconds: 1.07
+      minutes: 3
+      hours: 0
+    exhaleStartTime:
+      seconds: 3.12
+      minutes: 3
+      hours: 0
+    exhaleEndTime:
+      seconds: 8.57
+      minutes: 3
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 30.75
+      minutes: 3
+      hours: 0
+    inhaleEndTime:
+      seconds: 34.92
+      minutes: 3
+      hours: 0
+    exhaleStartTime:
+      seconds: 35.78
+      minutes: 3
+      hours: 0
+    exhaleEndTime:
+      seconds: 42.32
+      minutes: 3
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 43.07
+      minutes: 3
+      hours: 0
+    inhaleEndTime:
+      seconds: 46.39
+      minutes: 3
+      hours: 0
+    exhaleStartTime:
+      seconds: 48.24
+      minutes: 3
+      hours: 0
+    exhaleEndTime:
+      seconds: 54.1
+      minutes: 3
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 55.07
+      minutes: 3
+      hours: 0
+    inhaleEndTime:
+      seconds: 58.28
+      minutes: 3
+      hours: 0
+    exhaleStartTime:
+      seconds: 0.14
+      minutes: 4
+      hours: 0
+    exhaleEndTime:
+      seconds: 6.64
+      minutes: 4
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 20.14
+      minutes: 4
+      hours: 0
+    inhaleEndTime:
+      seconds: 22.82
+      minutes: 4
+      hours: 0
+    exhaleStartTime:
+      seconds: 24.17
+      minutes: 4
+      hours: 0
+    exhaleEndTime:
+      seconds: 30.75
+      minutes: 4
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 32.46
+      minutes: 4
+      hours: 0
+    inhaleEndTime:
+      seconds: 34.39
+      minutes: 4
+      hours: 0
+    exhaleStartTime:
+      seconds: 35.9
+      minutes: 4
+      hours: 0
+    exhaleEndTime:
+      seconds: 42.75
+      minutes: 4
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 44.25
+      minutes: 4
+      hours: 0
+    inhaleEndTime:
+      seconds: 46.07
+      minutes: 4
+      hours: 0
+    exhaleStartTime:
+      seconds: 47.57
+      minutes: 4
+      hours: 0
+    exhaleEndTime:
+      seconds: 54.75
+      minutes: 4
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 7.39
+      minutes: 5
+      hours: 0
+    inhaleEndTime:
+      seconds: 10.07
+      minutes: 5
+      hours: 0
+    exhaleStartTime:
+      seconds: 12.3
+      minutes: 5
+      hours: 0
+    exhaleEndTime:
+      seconds: 35.35
+      minutes: 5
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
