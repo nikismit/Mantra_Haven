@@ -14,6 +14,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   breatheAudioDataList:
   - inhaleStartTime:
+      seconds: 0
+      minutes: 0
+      hours: 0
+    inhaleEndTime:
+      seconds: 3
+      minutes: 0
+      hours: 0
+    exhaleStartTime:
+      seconds: 4
+      minutes: 0
+      hours: 0
+    exhaleEndTime:
+      seconds: 8
+      minutes: 0
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 9
+      minutes: 0
+      hours: 0
+    inhaleEndTime:
+      seconds: 12
+      minutes: 0
+      hours: 0
+    exhaleStartTime:
+      seconds: 13
+      minutes: 0
+      hours: 0
+    exhaleEndTime:
+      seconds: 17
+      minutes: 0
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 18
+      minutes: 0
+      hours: 0
+    inhaleEndTime:
+      seconds: 21
+      minutes: 0
+      hours: 0
+    exhaleStartTime:
+      seconds: 22
+      minutes: 0
+      hours: 0
+    exhaleEndTime:
+      seconds: 26
+      minutes: 0
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 27
+      minutes: 0
+      hours: 0
+    inhaleEndTime:
+      seconds: 30
+      minutes: 0
+      hours: 0
+    exhaleStartTime:
+      seconds: 31
+      minutes: 0
+      hours: 0
+    exhaleEndTime:
+      seconds: 35
+      minutes: 0
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
       seconds: 37.92
       minutes: 0
       hours: 0
@@ -122,6 +194,42 @@ MonoBehaviour:
     startScale: {x: 1, y: 1, z: 1}
     endScale: {x: 3, y: 3, z: 3}
   - inhaleStartTime:
+      seconds: 38
+      minutes: 1
+      hours: 0
+    inhaleEndTime:
+      seconds: 41
+      minutes: 1
+      hours: 0
+    exhaleStartTime:
+      seconds: 42
+      minutes: 1
+      hours: 0
+    exhaleEndTime:
+      seconds: 46
+      minutes: 1
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 47
+      minutes: 1
+      hours: 0
+    inhaleEndTime:
+      seconds: 50
+      minutes: 1
+      hours: 0
+    exhaleStartTime:
+      seconds: 51
+      minutes: 1
+      hours: 0
+    exhaleEndTime:
+      seconds: 55
+      minutes: 1
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
       seconds: 57
       minutes: 1
       hours: 0
@@ -171,6 +279,24 @@ MonoBehaviour:
       hours: 0
     exhaleEndTime:
       seconds: 27.1
+      minutes: 2
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 28
+      minutes: 2
+      hours: 0
+    inhaleEndTime:
+      seconds: 32
+      minutes: 2
+      hours: 0
+    exhaleStartTime:
+      seconds: 33
+      minutes: 2
+      hours: 0
+    exhaleEndTime:
+      seconds: 38
       minutes: 2
       hours: 0
     startScale: {x: 1, y: 1, z: 1}
@@ -230,6 +356,42 @@ MonoBehaviour:
     startScale: {x: 1, y: 1, z: 1}
     endScale: {x: 3, y: 3, z: 3}
   - inhaleStartTime:
+      seconds: 9
+      minutes: 3
+      hours: 0
+    inhaleEndTime:
+      seconds: 13
+      minutes: 3
+      hours: 0
+    exhaleStartTime:
+      seconds: 14
+      minutes: 3
+      hours: 0
+    exhaleEndTime:
+      seconds: 19
+      minutes: 3
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 20
+      minutes: 3
+      hours: 0
+    inhaleEndTime:
+      seconds: 24
+      minutes: 3
+      hours: 0
+    exhaleStartTime:
+      seconds: 25
+      minutes: 3
+      hours: 0
+    exhaleEndTime:
+      seconds: 30
+      minutes: 3
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
       seconds: 30.75
       minutes: 3
       hours: 0
@@ -279,6 +441,24 @@ MonoBehaviour:
       hours: 0
     exhaleEndTime:
       seconds: 6.64
+      minutes: 4
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
+      seconds: 8
+      minutes: 4
+      hours: 0
+    inhaleEndTime:
+      seconds: 12
+      minutes: 4
+      hours: 0
+    exhaleStartTime:
+      seconds: 13
+      minutes: 4
+      hours: 0
+    exhaleEndTime:
+      seconds: 19
       minutes: 4
       hours: 0
     startScale: {x: 1, y: 1, z: 1}
@@ -338,6 +518,24 @@ MonoBehaviour:
     startScale: {x: 1, y: 1, z: 1}
     endScale: {x: 3, y: 3, z: 3}
   - inhaleStartTime:
+      seconds: 56
+      minutes: 4
+      hours: 0
+    inhaleEndTime:
+      seconds: 0
+      minutes: 5
+      hours: 0
+    exhaleStartTime:
+      seconds: 1
+      minutes: 5
+      hours: 0
+    exhaleEndTime:
+      seconds: 6.5
+      minutes: 5
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}
+  - inhaleStartTime:
       seconds: 7.39
       minutes: 5
       hours: 0
@@ -350,8 +548,8 @@ MonoBehaviour:
       minutes: 5
       hours: 0
     exhaleEndTime:
-      seconds: 35.35
+      seconds: 33
       minutes: 5
       hours: 0
     startScale: {x: 1, y: 1, z: 1}
-    endScale: {x: 3, y: 3, z: 3}
+    endScale: {x: 5, y: 5, z: 5}
