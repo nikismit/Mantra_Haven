@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc78a6c2acdf1b646bb8e7e7898d114e, type: 3}
+  m_Name: MenuBreathAudio
+  m_EditorClassIdentifier: 
+  breatheAudioDataList:
+  - inhaleStartTime:
+      seconds: 1
+      minutes: 0
+      hours: 0
+    inhaleEndTime:
+      seconds: 3
+      minutes: 0
+      hours: 0
+    exhaleStartTime:
+      seconds: 4
+      minutes: 0
+      hours: 0
+    exhaleEndTime:
+      seconds: 7
+      minutes: 0
+      hours: 0
+    startScale: {x: 1, y: 1, z: 1}
+    endScale: {x: 3, y: 3, z: 3}

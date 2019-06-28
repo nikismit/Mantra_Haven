@@ -1,6 +1,7 @@
 ﻿using SoundInput;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VolumeUIController : MonoBehaviour
 {
@@ -12,14 +13,16 @@ public class VolumeUIController : MonoBehaviour
 	private void Update()
 	{
 		Vector2 touchposition = OVRInput.Get(OVRInput.Axis2D.PrimaryTouchpad);
+		bool doUpdateUI = Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D);
 
 		if (
 			touchposition.y > 0 && OVRInput.GetDown(OVRInput.Button.One) ||
-			touchposition.y < 0 && OVRInput.GetDown(OVRInput.Button.One)
+			touchposition.y < 0 && OVRInput.GetDown(OVRInput.Button.One) || doUpdateUI
 		)
 		{
 			StopAllCoroutines();
 			volumeUI.SetActive(true);
+			volumeUI.GetComponentInChildren<Slider>().value = Mathf.Abs(SIC.settings.minVolume);
 			StartCoroutine(WaitingBeforeTurningOff(volumeUISecondsActive));
 		}
 	}

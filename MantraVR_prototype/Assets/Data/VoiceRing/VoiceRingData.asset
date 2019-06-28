@@ -36,5 +36,5 @@ MonoBehaviour:
     type: 2}
   secondsBetweenSpawningVar: {fileID: 11400000, guid: 1f76615239cf4fe4dbb6c45480b9eaa1,
     type: 2}
-  pitchColorsVar: {fileID: 11400000, guid: dd558d29f206c144a831af0074af7baf, type: 2}
+  pitchColorsVar: {fileID: 11400000, guid: 655c39c13dc32cb4984254736ff9211a, type: 2}
   lightColorSpeedVar: {fileID: 11400000, guid: b8e3c87edd06fe742a10277fdc283ae6, type: 2}

@@ -10,7 +10,7 @@ Material:
   m_Name: Mat_MeditationModel
   m_Shader: {fileID: 4800000, guid: 16ba5be0cfecc3742b5638e131f806a7, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 0
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -86,11 +86,11 @@ Material:
     - _TessValue: 15
     - _UVSec: 0
     - _Value2: 3
-    - _Volume: 0.346
+    - _Volume: 0
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    - _BaseColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 0}
     - _Basecolor: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DefaultColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 0}

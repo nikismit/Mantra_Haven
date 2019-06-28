@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/cardboardTest.unity
     guid: 4f38004bb0a3ba746a7fec56d9a55e09
   - enabled: 1
+    path: Assets/Scenes/MENU.unity
+    guid: 4e54f9b41e85cb84b9bf27a822fdad11
+  - enabled: 1
     path: Assets/Scenes/VoiceRingTransparent.unity
     guid: ed0dbabb66bd212439161640a2afea8f
   - enabled: 0

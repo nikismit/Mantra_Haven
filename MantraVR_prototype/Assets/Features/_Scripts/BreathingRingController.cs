@@ -10,6 +10,9 @@ public class BreathingRingController : MonoBehaviour
 	public bool canAddTime = false;
 	public KeyCode addTimeKey = KeyCode.Space;
 
+	[SerializeField]
+	private bool loopBreatheAudioData = false;
+
 	private TimeData _currentTime = new TimeData();
 
 	private int _breathingIndex = -1;
@@ -99,8 +102,13 @@ public class BreathingRingController : MonoBehaviour
 	private void ExecuteTimeUpdate()
 	{
 		if (_elementIndex >= breatheAudio.breatheAudioDataList.Count)
-			return;
+		{
+			if (loopBreatheAudioData == false)
+				return;
 
+			_currentTime = new TimeData();
+			_elementIndex = 0;
+		}
 		if (_breathingIndex == -1)
 			_breathingIndex = 0;
 
